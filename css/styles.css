@@ -15,14 +15,19 @@ main > .tagline {
 	font-weight: 100;
 }
 
-.icons-social img {
+.icons-social a img {
+  height: 100%;
+  width: 100%;
+}
+
+.icons-social a {
   height: 50px;
   width: 50px;
 }
 
 @media only screen and (max-width: 400px)  {
-  .icons-social img {
-    height: 40px;
-    width: 40px;
+  .icons-social a {
+      height: 40px;
+      width: 40px;
   }
 }
