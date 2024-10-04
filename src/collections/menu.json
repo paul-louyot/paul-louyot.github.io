@@ -2,9 +2,5 @@
   {
     "name": "Home",
     "url": "/"
-  },
-  {
-    "name": "Projects",
-    "url": "/projects"
   }
 ]
