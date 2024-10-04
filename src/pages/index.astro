@@ -2,6 +2,7 @@
 import Separator from "../components/home/separator.astro";
 import Layout from "../layouts/main.astro";
 import Projects from "../components/home/projects.astro";
+import Button from "../components/button.astro";
 ---
 
 <Layout title="Paul">
@@ -26,8 +27,11 @@ import Projects from "../components/home/projects.astro";
         >
           <li>Vue.js development</li>
           <li>Ruby on Rails development</li>
+          <li>Technical consulting</li>
           <li>and more...</li>
         </ul>
+        <Button text="Hire me" link="/contact" />
+
       </div>
       <div class="aspect-square hidden md:block">
         <img
