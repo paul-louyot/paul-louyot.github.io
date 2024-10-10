@@ -1,0 +1,56 @@
+<form data-hf-form action="https://api.headlessforms.cloud/api/v1/form/D9jmAxPfDZ" id="f0c0b5b3-9426-4c96-ba57-8a7afface7b3" method="POST" enctype="multipart/form-data" class="mt-4 flex flex-col gap-4">
+
+  <div>
+    <p class="text-neutral-600 dark:text-neutral-400 mb-2">Email</p>
+    <input type="text" id="email" name="email"
+    class="w-full h-8 px-3 text-sm border border-dashed rounded-lg focus:ring-0
+    border-neutral-400 dark:border-neutral-600 dark:bg-neutral-800 dark:text-white focus:outline-black"
+    >
+  </div>
+  <div>
+    <p class="text-neutral-600 dark:text-neutral-400 mb-2">Message</p>
+    <textarea name="message" id="message"
+    class="w-full px-3 py-1 text-sm border border-dashed rounded-lg focus:ring-0
+    border-neutral-400 dark:border-neutral-600 dark:bg-neutral-800 dark:text-white focus:outline-black"
+    ></textarea>
+  </div>
+  <div>
+
+    <button type="submit" class="inline-flex w-auto px-4 py-2 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900 dark:bg-white dark:text-neutral-900 text-neutral-100 hover:border-neutral-700 border-neutral-900 dark:hover:border-neutral-300 hover:bg-white dark:hover:bg-black dark:hover:text-white hover:text-neutral-900">Submit</button>
+  </div>
+</form>
+<div class="mt-2">
+  <p class="text-green-500 hidden" id="success">Your message has
+    been sent successfully!</p>
+  <p class="text-red-500 hidden" id="error">Oops! Something went wrong. Please try again later.</p>
+  <p class="text-red-500 hidden" id="error-network">Network error. Please check your connection and try again.</p>
+</div>
+<script>
+  const form = document.querySelector('form[data-hf-form]');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();  // Prevent default form submission behavior
+
+    const formData = new FormData(form);
+    const isEmpty = [...formData.values()].every(e => !e)
+
+    if (isEmpty) return
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData
+      });
+      form.remove();
+
+      if (response.ok) {
+        document.getElementById('success').classList.remove('hidden')
+      } else {
+        document.getElementById('error').classList.remove('hidden')
+      }
+    } catch (error) {
+      document.getElementById('error-network').classList.remove('hidden')
+    }
+  });
+</script>
+

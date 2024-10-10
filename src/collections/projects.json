@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Multi-step client onboarding",
+    "description": "Acquisition funnel I worked on at my last job",
+    "image": "/assets/images/flatlooker.png",
+    "url": "https://www.manda.fr/v2/landlord_onboardings"
+  },
+  {
+    "name": "Run planner",
+    "description": "Running plan logger",
+    "image": "/assets/images/run_planner.png",
+    "url": "https://runplanner.netlify.app/"
+  },
+  {
+    "name": "Daily mood log",
+    "description": "An interactive tool to track and reflect on your emotions every day",
+    "image": "/assets/images/daily_mood_log.png",
+    "url": "https://daily-mood-log.netlify.app"
+  },
+  {
+    "name": "Débattons mieux",
+    "description": "Principles and tools for a constructive discussion",
+    "image": "/assets/images/debattons_mieux.png",
+    "url": "https://debattonsmieux.fr"
+  }
+]
