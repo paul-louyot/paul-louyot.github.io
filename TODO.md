@@ -1,1 +1,2 @@
-- about section
+- about page
+- testimonials page
