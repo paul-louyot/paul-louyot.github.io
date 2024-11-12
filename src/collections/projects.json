@@ -6,6 +6,12 @@
     "url": "https://www.manda.fr/v2/landlord_onboardings"
   },
   {
+    "name": "Dynamic flat search page",
+    "description": "Multi-critera flat search, Airbnb style",
+    "image": "/assets/images/flat_search.png",
+    "url": "https://www.manda.fr/flats"
+  },
+  {
     "name": "Run planner",
     "description": "Running plan logger",
     "image": "/assets/images/run_planner.png",
