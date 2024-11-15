@@ -12,6 +12,12 @@
     "url": "https://www.manda.fr/flats"
   },
   {
+    "name": "Brrrrrrr 🚀",
+    "description": "Minimalist TODO app",
+    "image": "/assets/images/brrrrrrr.png",
+    "url": "https://brrrrrrr.netlify.app/"
+  },
+  {
     "name": "Run planner",
     "description": "Running plan logger",
     "image": "/assets/images/run_planner.png",
