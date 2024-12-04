@@ -1,2 +1,4 @@
 - about page
 - testimonials page
+- use fillout for the form
+- use Nuxt instead
