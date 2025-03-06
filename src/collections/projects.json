@@ -12,6 +12,12 @@
     "url": "https://www.manda.fr/flats"
   },
   {
+    "name": "Cookbook",
+    "description": "My personnal cookbook",
+    "image": "/assets/images/cookbook.png",
+    "url": "https://pauls-cookbook.netlify.app/"
+  },
+  {
     "name": "Brrrrrrr 🚀",
     "description": "Minimalist TODO app",
     "image": "/assets/images/brrrrrrr.png",
